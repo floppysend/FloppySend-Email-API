@@ -179,7 +179,6 @@ https://email.floppysend.com/api/v1/lists
 ```
 ```
 https://email.floppysend.com/api/v1/lists?api_token={your_api_token}
-
 ```
 
 #### Parameters
@@ -192,7 +191,7 @@ https://email.floppysend.com/api/v1/lists?api_token={your_api_token}
 ```JSON
 [
     {
-        "id": {list_id},
+        "id": "{list_id}",
         "uid": "{list_uid}",
         "name": "{list_name}",
         "default_subject": "{list_default_subject}",
@@ -203,7 +202,7 @@ https://email.floppysend.com/api/v1/lists?api_token={your_api_token}
         "updated_at": "2021-07-06 03:04:28"
     },
     {
-        "id": {list_id},
+        "id": "{list_id}",
         "uid": "{list_uid}",
         "name": "{list_name}",
         "default_subject": "{list_default_subject}",
@@ -693,7 +692,7 @@ https://email.floppysend.com/api/v1/campaigns/{uid}?api_token={your_api_token}
         "name": "{campaign_name}",
         "list": "{campaign_list}",
         "segment": "{campaign_segment}",
-        "default_subject": {campaign_default_subject},
+        "default_subject": "{campaign_default_subject}",
         "from_email": "{campain_from_email}",
         "from_name": "{campaign_from_list}",
         "remind_message": null,
@@ -1236,7 +1235,6 @@ Request Types
  - GET METHOD
 ```
 https://email.floppysend.com/api/v1/subscribers/{uid}
-
 ```
 ```
 https://email.floppysend.com/api/v1/subscribers?list_uid={lidt_if}&id={subscriber_id}&api_token={your_api_token}
@@ -1259,7 +1257,7 @@ https://email.floppysend.com/api/v1/subscribers?list_uid={lidt_if}&id={subscribe
         "status": "{subscriber_status}",
         "FIRST_NAME": "{subscriber-first_name}",
         "LAST_NAME": "{subscriber_last_name}",
-        "CUSTOM_FIELD_1": {subscriber_custom_field}
+        "CUSTOM_FIELD_1": "{subscriber_custom_field}"
     }
 ]
 ```
@@ -1518,7 +1516,7 @@ https://email.floppysend.com/api/v1/subscribers/email/{subsriber_email}?api_toke
             "list_uid": "{list_uid}",
             "email": "{subscriber_email}",
             "status": "{subscriber_status}",
-            "source": {subscriber_source},
+            "source": "{subscriber_source}",
             "ip_address": "{subscriber_ap_address}",
             "FIRST_NAME": "{subscriber_first_name}",
             "LAST_NAME": "{subscriber_last_name}"
